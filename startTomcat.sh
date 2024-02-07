@@ -22,8 +22,31 @@
 # Swich to root to start service
 # sudo -i
 #cd /opt/tomcat/bin
-#./startup.sh run
+#./startup.sh
 
 #sudo ufw allow 8080
 #http://localhost:8080 tomcat should work now
+
+#install jenkins war
+#cd /opt/tomcat/webapps
+#wget https://get.jenkins.io/war-stable/latest/jenkins.war
+#restart tomcat
+#access jenkins on http://localhost:8080/jenkins
+
+#allow JMX
+#add these lines to catalina.sh file in /opt/tomcat/bin/catalina.sh
+
+#CATALINA_OPTS="$CATALINA_OPTS -Dcom.sun.management.jmxremote"
+#CATALINA_OPTS="$CATALINA_OPTS -Dcom.sun.management.jmxremote.port=PORT_NUMBER"
+#CATALINA_OPTS="$CATALINA_OPTS -Dcom.sun.management.jmxremote.ssl=false"
+#CATALINA_OPTS="$CATALINA_OPTS -Dcom.sun.managemnt.jmxremote.authenticate=false"
+
+
+#restart tomcat
+#run jconsole
+
+
+
+
+
 
