@@ -34,7 +34,7 @@
 #access jenkins on http://localhost:8080/jenkins
 
 #allow JMX
-#add these lines to catalina.sh file in /opt/tomcat/bin/catalina.sh
+#add all these lines to catalina.sh file in /opt/tomcat/bin/catalina.sh
 
 #CATALINA_OPTS="$CATALINA_OPTS -Dcom.sun.management.jmxremote"
 #CATALINA_OPTS="$CATALINA_OPTS -Dcom.sun.management.jmxremote.port=PORT_NUMBER"
